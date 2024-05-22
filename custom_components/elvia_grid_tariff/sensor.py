@@ -58,12 +58,12 @@ async def async_setup_entry(
     coordinator: ElviaDataUpdateCoordinator = hass.data[DOMAIN][entry.entry_id]
 
     async_add_entities(
-        ElviaCoordinatorSensor(coordinator, description, "elvia")
+        ElviaCoordinatorSensor(coordinator, description, "elvia_grid_tariff")
         for description in FIXED_PRICE_SENSORS
     )
 
     async_add_entities(
-        ElviaEnergySensor(coordinator, description, "elvia")
+        ElviaEnergySensor(coordinator, description, "elvia_grid_tariff")
         for description in ENERGY_PRICE_SENSORS
     )
 
@@ -151,7 +151,7 @@ class ElviaMaxHourAverageSensor(ElviaSensor):
             name=f"Average max hours {month_str}",
             state_class=SensorStateClass.MEASUREMENT,
         )
-        super().__init__(coordinator, description, "elvia")
+        super().__init__(coordinator, description, "elvia_grid_tariff")
 
     @property
     def native_unit_of_measurement(self) -> str | None:
@@ -179,7 +179,7 @@ class ElviaMaxHourSensor(ElviaSensor):
             name=f"Max hour {sensor_index} {month_str}",
             state_class=SensorStateClass.MEASUREMENT,
         )
-        super().__init__(coordinator, description, "elvia")
+        super().__init__(coordinator, description, "elvia_grid_tariff")
 
     def update_from_data(self) -> None:
         self.sensor_data = self.coordinator.mapped_maxhours[self.month][self.sensor_index]['value']

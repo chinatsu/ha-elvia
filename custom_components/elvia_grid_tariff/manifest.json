@@ -4,10 +4,10 @@
   ],
   "config_flow": true,
   "documentation": "https://github.com/sindrebroch/ha-elvia",
-  "domain": "elvia",
+  "domain": "elvia_grid_tariff",
   "iot_class": "cloud_polling",
   "issue_tracker": "https://github.com/sindrebroch/ha-elvia/issues",
-  "name": "Elvia",
+  "name": "Elvia Grid Tariff",
   "requirements": [],
   "version": "0.3.0"
 }

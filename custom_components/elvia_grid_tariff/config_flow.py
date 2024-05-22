@@ -57,7 +57,7 @@ class ElviaFlowHandler(config_entries.ConfigFlow, domain=DOMAIN):
                 )
 
             return self.async_create_entry(
-                title="Elvia",
+                title="Elvia Grid Tariff",
                 data=user_input,
             )
 

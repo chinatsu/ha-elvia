@@ -4,7 +4,7 @@ from logging import Logger, getLogger
 
 LOGGER: Logger = getLogger(__package__)
 
-DOMAIN = "elvia"
+DOMAIN = "elvia_grid_tariff"
 PLATFORMS = ["sensor"]
 
 CONF_TOKEN = "token"
