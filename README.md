@@ -10,31 +10,27 @@ HomeAssistant-integration for Elvia
 ## Requirements
 
 - Metering point id. (Målepunkt-ID, not Målernummer) Log into [Elvia](https://www.elvia.no/minside) and find your ID.
-- API-key. Sign up for GridTariffAPI at [Elvia developer portal](https://developers.elvia.no/). You may retreive the API key in your [profile](https://developers.elvia.no/profile)
+- API-key. Sign up for GridTariffAPI at the [Elvia developer portal](https://developers.elvia.no/). You may retreive the API key in your [profile](https://developers.elvia.no/profile) (the primary key should be sufficient).
 - Token. [Read how](https://www.elvia.no/smart-forbruk/api-er-for-smartere-hjem-og-bedrifter/slik-kan-du-ta-i-bruk-metervalue-api/).
    - The short of it is: log into [Elvia](https://www.elvia.no/minside), under "Andre tjenester" select "Tilganger".
    - From there, select "Opprett token for målerverdier i API".
 
 ## Installation
 
-<details>
-   <summary>HACS (Recommended)</summary>
+### HACS (Recommended)
 
-   1. Ensure that [HACS](https://hacs.xyz/) is installed.
-   2. Add this repository as a custom repository
-   3. Search for and install the "Elvia Grid Tariff" integration.
-   4. Restart Home Assistant.
-   5. Add the `Elvia Grid Tariff` integration to HA from the integration-page
-</details>
+1. Ensure that [HACS](https://hacs.xyz/) is installed.
+2. Add this repository as a custom repository
+3. Search for and install the "Elvia Grid Tariff" integration.
+4. Restart Home Assistant.
+5. Add the `Elvia Grid Tariff` integration to Home Assistant from the Integrations page
 
-<details>
-   <summary>Manual installation</summary>
+### Manual installation
 
-   1. Download the `Source code (zip)` file from the [latest release](https://github.com/chinatsu/ha-elvia/releases/latest).
-   2. Unpack the release and copy the `custom_components/elvia_grid_tariff` directory into the `custom_components` directory of your Home Assistant installation.
-   3. Restart Home Assistant.
-   4. Add the `Elvia Grid Tariff` integration to HA from the integration-page
-</details>
+1. Download the `Source code (zip)` file from the [latest release](https://github.com/chinatsu/ha-elvia/releases/latest).
+2. Unpack the release and copy the `custom_components/elvia_grid_tariff` directory into the `custom_components` directory of your Home Assistant installation.
+3. Restart Home Assistant.
+4. Add the `Elvia Grid Tariff` integration to HA from the integration-page
 
 
 ## Sensors
