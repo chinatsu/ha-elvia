@@ -1,4 +1,4 @@
-# Elvia for HomeAssistant
+# Elvia Grid Tariff for HomeAssistant
 
 Forked from [sindrebroch/ha-elvia](https://github.com/sindrebroch/ha-elvia), go buy them a coffee if you want to.
 
@@ -6,6 +6,17 @@ Forked from [sindrebroch/ha-elvia](https://github.com/sindrebroch/ha-elvia), go 
 [![hacs_badge](https://img.shields.io/badge/HACS-Custom-41BDF5.svg)](https://github.com/hacs/integration)
 
 HomeAssistant-integration for Elvia
+
+## Notes and changes from sindrebroch's version
+
+Firstly, the name of the integration has changed. 
+There is a different [Elvia](https://www.home-assistant.io/integrations/elvia/) integration available, so to avoid shadowing its name I've chosen to call this one "Elvia Grid Tariff".
+
+Secondly, I tentatively have not much interest in improving this integration beyond small fixes to keep it working through Home Assistant-upgrades; which was the initial spark to fork this to begin with.
+I'm happy to receive help through PRs and issues to improve the integration though, and maybe that'll motivate me to improve it too.
+Ideally, sindrebroch returns at some point to merge the changes proposed already, then I'll probably delete this fork.
+
+If others want to contribute to this, I could also transfer this to a GitHub organization to more easily manage maintainers and such, but we'll cross that bridge if we get there.
 
 ## Requirements
 
